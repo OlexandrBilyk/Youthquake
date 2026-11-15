@@ -1,0 +1,47 @@
+.section {
+  background: var(--color-surface);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.number {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #14b8a6, #22c55e);
+  color: #0f172a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+}
+
+.stepTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.stepText {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}

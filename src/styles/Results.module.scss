@@ -1,0 +1,94 @@
+.section {
+  background: var(--color-surface);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-text-muted);
+
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.statBox {
+  text-align: center;
+  background: var(--color-bg);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  min-width: 120px;
+
+  strong {
+    display: block;
+    font-size: 1.75rem;
+    color: #4ade80;
+  }
+
+  span {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+}
+
+.clearBtn {
+  display: block;
+  margin: 2rem auto 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text-muted);
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+  }
+}
