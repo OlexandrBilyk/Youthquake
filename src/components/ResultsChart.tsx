@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import {
   BarChart,
   Bar,
@@ -13,7 +13,7 @@ import {
   LineChart,
   Line,
 } from 'recharts'
-import { RootState, AppDispatch } from '../store'
+import { RootState } from '../store'
 import {  VoteOption } from '../store/votesSlice'
 import styles from '../styles/Results.module.scss'
 
