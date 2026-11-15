@@ -60,7 +60,7 @@ export default function VotingSection() {
       <div className="container">
         <h2 className={styles.title}>Мікротестування ідеї</h2>
         <p className={styles.subtitle}>
-          Залиште швидкий відгук — це займе 20 секунд. Дані зберігаються тільки у вашому браузері.
+          Залиште швидкий відгук — це займе 20 секунд.
         </p>
 
         <form className={styles.form} onSubmit={handleSubmit}>
