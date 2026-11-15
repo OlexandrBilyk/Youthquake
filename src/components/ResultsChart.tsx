@@ -14,7 +14,7 @@ import {
   Line,
 } from 'recharts'
 import { RootState, AppDispatch } from '../store'
-import { clearVotes, VoteOption } from '../store/votesSlice'
+import {  VoteOption } from '../store/votesSlice'
 import styles from '../styles/Results.module.scss'
 
 const optionLabels: Record<VoteOption, string> = {
@@ -28,7 +28,6 @@ const COLORS = ['#22c55e', '#14b8a6', '#94a3b8', '#ef4444']
 
 export default function ResultsChart() {
   const votes = useSelector((state: RootState) => state.votes.votes)
-  const dispatch = useDispatch<AppDispatch>()
 
   if (votes.length === 0) {
     return (
